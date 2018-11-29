@@ -9,7 +9,7 @@
   {{ else }}
     <title>{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
   {{ end }}
-  {{ $style := resources.Get "sass/index.sass" | toCSS }}
+  {{ $style := resources.Get "sass/index.sass" | toCSS | resources.PostCSS }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
 <body>
