@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: TODO： title {{ .Section }}/{{ .Name }}
 date: {{ .Date }}
-draft: true
+type: {{ .Type }}
+layout: {{ .File.TranslationBaseName }}
 ---
-
