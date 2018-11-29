@@ -1,6 +1,28 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
 
-TODO: ユーザ間のトーク画面を作成する
+<section class="balloon container with-title">
+  <h2 class="title">Balloons</h2>
+  <div class="messages">
+    <div class="message -left">
+      <i class="bcrikko"></i>
+      <div class="balloon from-left">
+        <p>Hell World</p>
+      </div>
+    </div>
+    <div class="message -right">
+      <div class="balloon from-right">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo totam commodi, veritatis ea et optio, illo doloribus amet mollitia libero adipisci, quo sunt. At iste, dolore sunt accusamus fugiat natus.</p>
+      </div>
+      <i class="bcrikko"></i>
+    </div>
+  </div>
+
+  <form class="field is-inline">
+    <label for="label-message">message</label>
+    <input type="text" class="input" id="label-message">
+    <button type="button" class="btn is-success">Submit</button>
+  </form>
+</section>
 
 {{ partial "footer.html" . }}

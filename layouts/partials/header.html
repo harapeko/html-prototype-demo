@@ -1,5 +1,8 @@
-{{ if .IsHome }}
-  <h1>{{ .Site.Title }}</h1>
-{{ else }}
-  <h1>{{ .Title }}</h1>
-{{ end }}
+<header>
+  {{ if .IsHome }}
+    <h1>{{ .Site.Title }}</h1>
+    <p>Prototype List</p>
+  {{ else }}
+    <h1>{{ .Title }}</h1>
+  {{ end }}
+</header>
