@@ -1,3 +1,25 @@
-body
-  display: grid
-  background: tomato
+// 設計：ECSS + ITCSS + RSCSS
+//
+// ECSS では命名規則の接頭辞と、捨て易さという思想を。
+// ITCSS ではCSSの階層構造を。
+// RSCSS では命名規則と>による規則を。
+
+// SETTINGS: プリプロセッサで利用するグローバル変数や全体の設定
+// @import "_settings.variables"
+
+// TOOLS: プリプロセッサで利用するmixinやfunctionなど
+// @import "_tools.mixin"
+
+// GENERIC: 基礎スタイル。normalize.css、reset, box-sizingなど
+// @import "_generic.reset"
+
+// ELEMENTS: 要素型セレクタ
+// !!基本的に使用しない!!
+
+// OBJECTS: 装飾を持たない基本骨子なデザインパターン
+// !!今回は不要そう!!
+
+// COMPONENTS: 装飾を持つデザインパターン
+
+// TRUMPS：汎用クラス(この1ファイルにまとめる)
+// @import "_trumps"
