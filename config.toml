@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://html-prototype-demo.netlify.com/"
 languageCode = "ja"
 defaultLanguageCode = "ja"
 title = "HTML Prototype DEMO"
