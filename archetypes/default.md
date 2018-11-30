@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "TODO：タイトル更新"
 date: {{ .Date }}
-draft: true
+type: {{ .Type }}
+layout: {{ .File.TranslationBaseName }}
 ---
-
