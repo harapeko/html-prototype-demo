@@ -6,6 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ .Site.Title }}</title>
   {{ $style := resources.Get "sass/index.sass" | toCSS | postCSS }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
 <body>
